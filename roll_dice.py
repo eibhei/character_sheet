@@ -1,10 +1,11 @@
 import random
 
+
 def roll_dice(num_dice: int, num_faces: int) -> list[int]:
     rolls = []
 
 
-    for d in range(0,num_dice):
+    for d in range(num_dice):
         r = random.randint(1, num_faces)
         rolls.append(r)
 
